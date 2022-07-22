@@ -3,10 +3,10 @@ import SearchForm from "../SearchForm/SearchForm";
 import PropTypes from "prop-types";
 import styles from "./Searchbar.module.css";
 
-const Searchbar = ({ onSubmit, onReset }) => {
+const Searchbar = ({ onSubmit }) => {
     return (
         <header className={styles.Searchbar}>
-           <SearchForm onReset={onReset} onSubmit={onSubmit}/>
+           <SearchForm onSubmit={onSubmit}/>
         </header>
     );
 };

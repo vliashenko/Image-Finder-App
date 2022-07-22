@@ -11,7 +11,7 @@ const Modal = ({ url, onClose }) => {
             className={styles.Overlay}
             onClick={onClose}    
         >
-            <div className={styles.Modal}>
+            <div className={styles.Modal} onClick={(e) => e.stopPropagation()}>
                 <img src={url} alt="pixelby" />
             </div>
         </div>, modalRoot    

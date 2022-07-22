@@ -28,8 +28,6 @@ const ImageGalleryItem = ({ webformatURL, largeImageURL }) => {
         setModalIsOpen( false )
     }
 
-
-
     return (
         <>
             <li 

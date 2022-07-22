@@ -42,21 +42,22 @@ const App = () => {
   };
 
   const handleSubmit = (value) => {
-    setQuery(value.query)
-  };
+    if(value === query) {
+      return;
+    }
 
-  const onNewSearchReset = (query) => {
-    setQuery(query);
+    setQuery(value);
     setItems([]);
+    setTotal(0);
     setPage(1);
-  }
+  };
 
   const loading = isLoading && <Loader/>;
   const button = items.length > 0 && total > items.length ? <Button isLoading={isLoading} onClick={onLoadMoreHandler}/> : null;
   const view = !error && <ImageGallery items={items}/>;
   return (
     <div className={styles.App}>
-        <Searchbar onReset={onNewSearchReset} onSubmit={handleSubmit}/>
+        <Searchbar onSubmit={handleSubmit}/>
         {view}
         {loading}
         {button}
