@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Image-Finder-App/static/css/main.5c8d48ac.css",
+    "main.js": "/Image-Finder-App/static/js/main.0a20bfb9.js",
+    "index.html": "/Image-Finder-App/index.html",
+    "main.5c8d48ac.css.map": "/Image-Finder-App/static/css/main.5c8d48ac.css.map",
+    "main.0a20bfb9.js.map": "/Image-Finder-App/static/js/main.0a20bfb9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c8d48ac.css",
+    "static/js/main.0a20bfb9.js"
+  ]
+}
